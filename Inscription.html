@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recettes</title>
+        <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+    </head>
+
+    <body>
+        <header>
+            <img src="Images/gusteau.jpg" alt="logo" title="Ceci est mon logo" id="logo">
+            <h1>Les Meilleures Recettes</h1>
+        </header>
+
+    <section class="menu">
+        <nav>
+            <ul>
+                <li><a href="Index.html">Accueil</a></li>
+                <li><a href="Recettes.html">Recettes</a></li>
+                <li><a href="Inscription.html">Inscription</a></li>
+                <li><a href="Resultats.html">Score</a></li>
+            </ul>
+        </nav>
+
+        <section class="block-centre">
+            <form class="inscription">
+                <fieldset>
+                    <legend>Inscription :</legend>
+                    Civilité: 
+                    <input type="radio" name="civi" value="Melle">Melle
+                    <input type="radio" name="civi" value="Mme">Mme
+                    <input type="radio" name="civi" value="M">Monsieur <br>
+                    Nom : <input type="text" name="nom" placeholder="Votre nom"> <br>
+                    Prénom : <input type="text" name="prenom" placeholder="Votre prenom"> <br>
+                    Mail : <input type="text" name="mail" placeholder="exemple@domaine.fr"> <br>
+                    <label for="pass">Votre mot de passe :</label>
+                    <input type="password" name="pass" id="pass" placeholder="Mot de Passe" size="30"/> <br>
+                    Date de naissance : <input type="date" name="anniversaire"> <br>
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="06xxxxxxxx" pattern="[0-9] {10}" maxlength="10"> <br>
+                </fieldset>
+                <input type="submit" value="Valider">
+            </form>
+
+            <form class="coordonnees">
+                <fieldset>
+                    <legend>Adresse :</legend>
+                        <label for="num">N°</label>
+                            <input type="number" name="num" id="num" placeholder="112" maxlength="3" size="3">
+                        <label for="rue">Voie</label>
+                            <input type="text" id="rue" name="rue" placeholder="Rue de la poupee qui tousse"> <br>
+                        <label for="code-postale">Code Postale</label>
+                            <input type="text" pattern="[0-9] {5}" placeholder="ex: 75001" maxlength="5"> 
+                        <label for="ville">Ville</label>
+                            <input type="text" name="ville" id="ville" placeholder="Lievin"> <br>
+                        <label for="pays">Pays</label>
+                            <input type="text" name="pays" id="pays" placeholder="France" maxlength="15"><br>
+                </fieldset>
+                <input type="submit" value="Valider">
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <p class="footer">Chef Dumbledore © 2019 Chef Gandalf</p>
+    </footer>
+    </body>
+</html>

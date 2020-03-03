@@ -1,0 +1,248 @@
+body {
+    font-family: cursive, arial, sans-serif;
+    margin: 0px;
+    /* text-align: center; */
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    background-color: gray;
+}
+
+#logo {
+    display: flex;
+    /* flex: left; */
+    margin: 20px 20px;
+}
+
+h1 {
+    color: crimson;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    margin: 0px;
+}
+
+section {
+    /* text-align: center; */
+    /* margin: 0px;
+    padding: 5px; */
+    /* height: 1000px; */
+    /* display: flex;
+    flex-direction: row; */
+    background-color: turquoise;
+}
+
+figure {
+    /* display: flex;
+    flex-flow: column; */
+    /* padding: 5px; */
+    /* width: 100%; */
+    /* margin: auto; */
+    border: 2px solid black;
+    /* text-align: center; */
+    margin-inline-start: 5px 5px;
+    margin-inline-end: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* margin: 20px 20px; */
+    width: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller cursive;
+    /* padding: 3px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: justify;
+    margin: 15px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.block-centre {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recette {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-figure { 
+    display: flex;
+    flex-direction: row;
+    /* margin: 15px;
+    padding: 15px; */
+    text-align: center; 
+}
+
+.menu {
+    display: flex;
+}
+
+.paragraphe {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #fff;
+    background-color: #333;
+    transition: all 1s ease-out;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+nav {
+    text-align: left;
+    border-right: 1px solid black;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-recette {
+    text-align: left;
+    width: 200px;
+    display: flex;
+    padding: 12px;
+    /* clear: both; */
+    border-right: 1px solid black;
+}
+
+nav ul {
+    /*list-style-type: none;*/
+    /* padding: 15px; */
+    padding-inline-start: 5px;
+}
+
+nav li {
+    display: flex;
+    flex-direction: column;
+    width: 95px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    width: 100%;
+    padding: 2px;
+}
+
+form {
+    margin: 0 auto;
+    width: 800px;
+    padding: 0px;
+    /*border: 1px solid black;
+    border-radius: 2px;*/
+    display: inline-block;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+label {
+    width: 110px;
+    margin: 6px;
+}
+
+input, textarea {
+    font: 1em cursive;
+    /*width: 300px;*/
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+    background: #eaeaea;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+input [type=submit] {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: gray;
+    margin: 0px;
+    padding: 5px;
+}
+
+footer .footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    }
+    .menu
+    {
+        flex-wrap: wrap;
+    }
+    .block-figure {
+        flex-direction: column;
+    }
+}
